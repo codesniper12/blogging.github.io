@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MrDigitalDiary</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <!-- Tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Iconify icon -->
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .logo {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav li {
+            padding: 0px 10px;
+            cursor: pointer;
+        }
+
+        nav li a:hover {
+            color: rgb(171, 37, 175);
+        }
+
+        nav .search:hover {
+            color: rgb(171, 37, 175);
+        }
+
+        nav .icon {
+            padding: 0px 8px;
+        }
+
+        .section1 {
+            background: linear-gradient(to bottom right, rgb(165, 78, 222), rgb(197, 98, 200));
+            height: 300px;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .section2 {
+            background: linear-gradient(to bottom right, rgb(165, 78, 222), rgb(197, 98, 200));
+        }
+
+        .icon {
+            color: rgb(121, 34, 179);
+            cursor: pointer;
+        }
+
+        .icon:hover {
+            color: rgb(168, 106, 210);
+        }
+
+        .searchbox {
+            transition: all 0.6s ease-in-out;
+        }
+
+        .searchbox input {
+            all: unset;
+            width: 100%;
+            padding: 5px;
+        }
+
+        .searchbx {
+            border: 1px solid black;
+            background-color: white;
+        }
+
+        #searchbox {
+            background: linear-gradient(to bottom right, rgb(165, 78, 222), rgb(197, 98, 200));
+            box-shadow: 0px 0px 10px rgb(165, 78, 222);
+        }
+
+        .memebership:hover {
+            box-shadow: 0px 0px 10px rgb(105, 11, 113);
+        }
+
+        .section3 {
+            background: linear-gradient(to bottom right, rgb(165, 78, 222), rgb(197, 98, 200));
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="flex justify-around items-center p-4 ">
+            <div class="logo m-3 text-2xl ">MrDigitalDiary</div>
+            <ul class="flex items-center m-3 font-semibold">
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">BLOGS</a></li>
+                <li><a href="">ARTICLES</a></li>
+                <li class="search"><iconify-icon icon="fa:search"></iconify-icon></li>
+            </ul>
+            <div class="socials flex m-3 text-2xl">
+                <div class="icon"><a href="" class=""><iconify-icon icon="lucide:instagram"></iconify-icon></a></div>
+                <div class="icon"><a href=""><iconify-icon icon="bi:twitter"></iconify-icon></a></div>
+                <div class="icon"><a href=""><iconify-icon icon="devicon-plain:facebook"></iconify-icon></a></div>
+                <div class="icon"><a href=""><iconify-icon icon="fa:youtube"></iconify-icon></a></div>
+                <div class="icon"><a href=""><iconify-icon icon="mage:pinterest"></iconify-icon></a></div>
+            </div>
+        </nav>
+        <div class="searchbox flex justify-center items-center">
+            <form id="searchbox" class="border border-black w-10/12 p-3 m-2">
+                <div class="searchbx w-full p-2 flex">
+                    <input type="text" name="searchitem" id="searchitem" placeholder="Search Topic Here..">
+                    <button type="submit" class="mr-3"><iconify-icon icon="fa:search"
+                            class="hover:text-gray-400 cursor-pointer"></iconify-icon></button>
+                </div>
+            </form>
+            <iconify-icon icon="maki:cross"
+                class="text-red-800 text-2xl hover:text-red-900 cursor-pointer hidesearch"></iconify-icon>
+        </div>
+    </header>
+    <section class="section1 flex items-center justify-center ">
+        <div
+            class="memebership border border-white text-white p-3 pl-5 pr-5 cursor-pointer hover:bg-purple-700 rounded hover:border-violet-950">
+            BECOME A MEMBER OF OUR COMMUNITY!</div>
+    </section>
+    <section class="aboutdigitaldiary m-5 flex justify-center items-center">
+        <div class="flex w-10/12  relative">
+            <div class="about absolute -rotate-90 top-12 -left-3 text-lg uppercase">About Us</div>
+            <div class="imageofdigi ml-10 mt-2">
+                <img src="the-power-of-gratitude-cultivating-joy-in-everyday-life.jpeg" alt=""
+                    class="digi_img w-[40rem] rounded">
+            </div>
+            <div class="description ml-4 mt-2 mb-2 w-10/12 flex flex-col justify-between">
+                <div class="upper">
+                    <div class="mb-3 text-3xl"><strong>Hey, MrDigitalDiary Here!</strong></div>
+                    <p class="text-big text-lg w-10/12 mb-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Accusantium facere veritatis illum aperiam quidem saepe inventore eos molestiae nisi, optio iure
+                        possimus ipsa minima rerum. Expedita animi doloribus voluptatem tempora?Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Deleniti hic tempora fugit. Sit unde vitae fugit perspiciatis
+                        possimus et tempore soluta sunt. Non provident distinctio cumque architecto corporis, nesciunt
+                        recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, saepe asperiores
+                        quam voluptatem architecto eius dolore velit, amet ratione facilis tenetur quos voluptatum,
+                        ipsam pariatur nostrum eos error nobis non?ovident distinctio cumque architecto corporis,
+                        nesciunt
+                        recusandae. Lorem ipsum dolo adipisicing elit.</p>
+                </div>
+                <div class="lower">
+                    <div
+                        class="btn bg-purple-700 text-white rounded p-2 w-fit cursor-pointer hover:bg-purple-900 text-xl">
+                        Learn More!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section3 text-white p-20 relative flex justify-center items-center flex-col">
+        <div class="title_whatwedo absolute -rotate-90 top-30 left-[6.2rem] text-lg uppercase">Short Description</div>
+        <div class="title text-2xl mb-3">What We Do?</div>
+        <div class="descriptionwhatwedo text-xl w-6/12 text-center center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure delectus
+            voluptatem impedit nemo amet asperiores aspernatur quos quo nostrum dolorum. Omnis expedita repellat aliquid
+            consequatur animi quae illo debitis soluta.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Aspernatur facere, maiores dicta praesentium exercitationem deleniti odio? Culpa id doloremque, nesciunt
+            nemo sed fugiat? Autem quasi odio, asperiores voluptates mollitia animi!</div>
+    </section>
+
+
+    <script>
+
+        $(function () {
+            $('.searchbox').hide();
+
+            $('.search').click(function () {
+                $('.searchbox').show();
+                $('.search').hide();
+            });
+
+            $('.hidesearch').click(function () {
+                $('.searchbox').hide();
+                $('.search').show();
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>
